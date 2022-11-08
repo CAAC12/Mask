@@ -2152,6 +2152,7 @@ class MaskRCNN():
 
     def compile(self, learning_rate, momentum):
 		self.keras_model.metrics_tensors = []
+		
 		"""Gets the model ready for training. Adds losses, regularization, and
         metrics. Then calls the Keras compile() function.
         """
