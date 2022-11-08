@@ -1823,6 +1823,9 @@ class MaskRCNN():
     The actual Keras model is in the keras_model property.
     """
 
+    def compile(self, learning_rate, momentum):
+        self.keras_model.metrics_tensors = []
+	
     def __init__(self, mode, config, model_dir):
         """
         mode: Either "training" or "inference"
