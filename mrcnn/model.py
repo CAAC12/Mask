@@ -1821,10 +1821,7 @@ class MaskRCNN():
     """Encapsulates the Mask RCNN model functionality.
 
     The actual Keras model is in the keras_model property.
-    """
-
-    def compile(self, learning_rate, momentum):
-        self.keras_model.metrics_tensors = []
+    """       
 	
     def __init__(self, mode, config, model_dir):
         """
